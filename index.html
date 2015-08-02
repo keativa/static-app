@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>StaticApp - Make Static Site Editable</title>
+  <style>
+  * {margin:0; padding:0;}
+  body {background:#F0F2F5;font: 13px/30px sans-serif;color:#727578}
+  .not-found {float:none;display:block;width:400px;height:auto;margin:-61px auto 0 -241px;position:absolute; left:50%; top:50%;background:#fff;text-align: center;padding: 30px 40px;border: 1px solid #DCE1E8;}
+  #countdown {color:#f00; font-weight:700;}
+  @media (max-width:500px) {.not-found {width:auto;margin:20% 20px 0;position:relative;left:0;}}
+  </style>
+  </head>
+  <body onload='countdown()'>
+    <div class='not-found'>
+      <h3>Hi there, welcome!</h3>
+      <p>Sorry, our CMS is under development. We'll make sure to finish it by the end of September. Hopefully you'll come back to be a first tester :)</p>
+      <!--<p>Anda akan di-<em>redirect</em> ke homepage dalam <span id='countdown'>6</span> detik.</p>-->
+    </div>
+    <script>
+	  /*var ss = 6;
+	  function countdown() {
+		ss = ss-1;
+		if (ss<0) {
+		  window.location='/';
+		}
+		else {
+		  document.getElementById('countdown').innerHTML=ss;
+		  window.setTimeout('countdown()', 1000);
+		}
+	  }*/
+	</script>
+  </body>
+</html>
